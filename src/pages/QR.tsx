@@ -7,7 +7,7 @@ export default function QR() {
 
   return (
     <QRCodeSVG
-      value={atob(decodeURIComponent(data.data)) || "qr.lonelil.dev"}
+      value={atob(data.data) || "qr.lonelil.dev"}
       size={Number(data.size) || 128}
       bgColor={data.bgColor || "#FFFFFF"}
       fgColor={data.fgColor || "#000000"}
